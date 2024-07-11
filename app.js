@@ -16,6 +16,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.json("Welcome to app");
 });
+app.get("/userData", (req, res) => {
+  res.json("This is userData");
+});
+app.get("/getProducts", (req, res) => {
+  res.json("This are your products");
+});
 
 app.post("/", (req, res) => {
   console.log(req.body);
