@@ -24,7 +24,6 @@ app.get("/getProducts", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-  console.log(req.body);
   res.json({ success: true, message: "Post request" });
 });
 
