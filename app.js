@@ -19,6 +19,9 @@ app.get("/", (req, res) => {
 app.get("/userData", (req, res) => {
   res.json("This is userData");
 });
+app.get("/getProducts", (req, res) => {
+  res.json("This are your products");
+});
 
 app.post("/", (req, res) => {
   console.log(req.body);
