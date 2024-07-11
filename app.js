@@ -25,7 +25,7 @@ app.get("/getProducts", (req, res) => {
 
 app.post("/", (req, res) => {
   console.log(req.body);
-  res.json({ success: true, text: "Post request" });
+  res.json({ success: true, message: "Post request" });
 });
 
 app.listen(3000, () => console.log("Listning to PORT 3000.."));
